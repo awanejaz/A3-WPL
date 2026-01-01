@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toggle Shape</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #shape {
+    width: 150px;
+    height: 150px;
+    background-color: steelblue;
+    margin: 20px auto;
+    transition: border-radius 0.3s ease;
+}
+
+/* Circle class */
+.circle {
+    border-radius: 50%;
+}
+#btn {
+    display: block;
+    margin: 0 auto;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div id="shape"></div>
+    <button id="btn" onclick="toggleShape()">Toggle Shape</button>
+
+    <script src="script.js"></script>
+</body>
+
+
+<script>
+    function toggleShape() {
+    const shape = document.getElementById("shape");
+    shape.classList.toggle("circle");
+}
+
+</script>
+</html>
